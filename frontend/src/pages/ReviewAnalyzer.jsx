@@ -16,7 +16,7 @@ function ReviewAnalyzer() {
     setPrediction("");
 
     axios
-      .post("http://127.0.0.1:8000/api/predict/", {
+      .post("https://fake-review-fullstack.onrender.com/api/predict/", {
         review: review,
       })
       .then((response) => {
