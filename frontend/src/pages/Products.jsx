@@ -7,7 +7,7 @@ function Products() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/products/")
+      .get("https://fake-review-fullstack.onrender.com/api/products/")
       .then((response) => {
         setProducts(response.data);
       })
